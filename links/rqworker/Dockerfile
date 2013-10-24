@@ -11,4 +11,4 @@ RUN apt-get clean
 
 RUN pip install rq
 
-CMD rqworker -H `echo $REDIS_PORT | cut -d ":" -f 2 | cut -d "/" -f 3`
+CMD rqworker -H `echo $REDIS_PORT | cut -d ":" -f 1`

@@ -11,4 +11,4 @@ RUN apt-get clean
 
 RUN pip install rq-dashboard
 
-CMD rq-dashboard -H `echo $REDIS_PORT | cut -d ":" -f 2 | cut -d "/" -f 3`
+CMD rq-dashboard -H `echo $REDIS_PORT | cut -d ":" -f 1`
