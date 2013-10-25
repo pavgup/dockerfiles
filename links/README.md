@@ -1,7 +1,7 @@
 Start Redis Server
 ==================
 
-    docker run -d johncosta/redis
+    docker run -d crosbymichael/redis
 
 Create a link alias
 ===================
