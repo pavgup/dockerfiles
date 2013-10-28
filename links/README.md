@@ -1,12 +1,8 @@
 Start Redis Server
 ==================
 
-    docker run -d crosbymichael/redis
+    docker run -d -name /redis crosbymichael/redis
 
-Create a link alias
-===================
-
-    docker link `docker ps -l -q` /redis
 
 Launch some workers linked to redis
 ===================================
