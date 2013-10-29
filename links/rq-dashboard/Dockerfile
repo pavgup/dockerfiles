@@ -11,7 +11,4 @@ RUN apt-get clean
 
 RUN pip install rq-dashboard
 
-ADD https://raw.github.com/vieux/dockerfiles/master/links/links.sh /links.sh
-RUN chmod +x /links.sh
-
-CMD rq-dashboard -H `/links.sh addr redis`
+CMD rq-dashboard -H $REDIS_PORT_6379_TCP_ADDR

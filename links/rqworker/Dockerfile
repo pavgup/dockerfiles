@@ -11,4 +11,4 @@ RUN apt-get clean
 
 RUN pip install rq
 
-CMD rqworker -H `echo $REDIS_PORT | cut -d ":" -f 1`
+CMD rqworker -H $REDIS_PORT_6379_TCP_ADDR
