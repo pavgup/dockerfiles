@@ -1,8 +1,8 @@
 FROM debian:jessie
 
-RUN apt-get update
+RUN apt-get update -qq
 
-RUN apt-get install ruby-dev build-essential --no-install-recommends -y
+RUN apt-get install ruby ruby-dev build-essential --no-install-recommends -qqy
 
 ADD http://production.cf.rubygems.org/rubygems/rubygems-2.2.2.tgz /
 
