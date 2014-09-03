@@ -7,4 +7,4 @@ RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git couchpotato
 
 EXPOSE 5050/tcp
 
-CMD ["python", "couchpotato/CouchPotato.py"]
+ENTRYPOINT ["/couchpotato/CouchPotato.py"]
